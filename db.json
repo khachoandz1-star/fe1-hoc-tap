@@ -27,18 +27,6 @@
       "id": 7
     },
     {
-      "name": "ngon lắm 1",
-      "image": "2321321",
-      "price": "10000000000000",
-      "id": 8
-    },
-    {
-      "name": "ngon lắm 2",
-      "image": "hehehehehe232321313",
-      "price": "50000000000000",
-      "id": 9
-    },
-    {
       "name": "ngon lắm 2",
       "image": "hehehehehe232321313",
       "price": "50000000000000",
@@ -55,6 +43,24 @@
       "image": "hehehehehe232321313",
       "price": "70000000000000",
       "id": 12
+    },
+    {
+      "name": "hoan dep trai",
+      "image": "123233123",
+      "price": "5600000000",
+      "id": 13
+    },
+    {
+      "name": "ko ngon 1",
+      "image": "hahahaha",
+      "price": "100000",
+      "id": 14
+    },
+    {
+      "name": "hoàn ngon trai số 1",
+      "image": "1",
+      "price": "20000",
+      "id": 16
     }
   ],
   "users": [

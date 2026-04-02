@@ -43,17 +43,17 @@ export class Productedit {
   onSubmit = () => {
     const productData = this.productform.value;
 
-    this.http.post('http://localhost:3000/products', productData).subscribe({
+    this.http.put(`http://localhost:3000/products/${this.id}`, productData).subscribe({
       next: (data) => {
         console.log(data);
-        this.message.success("Thêm mới thành công");
+        this.message.success("Sửa thành công");
 
 
         this.router.navigate(['/admin/products']);
       },
       error: (err) => {
         console.log(err);
-        this.message.error("Thêm mới thất bại");
+        this.message.error("Sửa thất bại");
       }
     });
   }

@@ -27,7 +27,7 @@ export class Productadd {
   onSubmit = () => {
     const productData = this.productform.value;
 
-    this.http.post('http://localhost:3000/products', productData).subscribe({
+    this.http.post(`http://localhost:3000/products`, productData).subscribe({
       next: (data) => {
         console.log(data);
         this.message.success("Thêm mới thành công");
