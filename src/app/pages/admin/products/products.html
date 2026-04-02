@@ -1,0 +1,35 @@
+<h1>Danh sách sản phẩm</h1>
+<nz-table #productTable [nzData]="products">
+  <thead>
+    <tr>
+      <th>STT</th>
+      <th>Tên sản phẩm</th>
+      <th>Ảnh</th>
+      <th>Giá tiền</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (product of productTable.data; let i=$index; track product.id) {
+        <tr>
+            <td>{{i+1}}</td>
+            <td>{{product.name}}</td>
+            <td><img [src]="product.image" width="90"/>
+            <td>{{product.price}}</td>
+            <td class="flex gap-2">
+                <button [routerLink]="['/admin/products/edit',product.id]" nz-button nzType="primary">Sửa</button>
+                <button
+  nz-button
+  nzType="primary"
+  nzDanger
+  nz-popconfirm
+  nzPopconfirmTitle="Bạn có chắc muốn xóa?"
+  (nzOnConfirm)="handleDelete(product.id)"
+>
+  Xóa
+</button>
+            </td>
+        </tr>
+    }
+  </tbody>
+</nz-table>

@@ -1,0 +1,26 @@
+<form nz-form [formGroup]="productform" class="login-form" (ngSubmit)="onSubmit()">
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Tên không đc để trống!">
+          <nz-input-wrapper>
+            <nz-icon nzInputPrefix nzType="user" />
+            <input type="text" nz-input formControlName="name" placeholder="Tên sản phẩm" />
+          </nz-input-wrapper>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+  <nz-form-control nzErrorTip="Ảnh ko đc để trống">
+    <nz-input-wrapper>
+      <nz-icon nzInputPrefix nzType="picture" />
+      <input nz-input formControlName="image" placeholder="Ảnh" />
+    </nz-input-wrapper>
+  </nz-form-control>
+</nz-form-item>
+      <nz-form-item>
+  <nz-form-control nzErrorTip="Giá k đc để trống">
+    <input nz-input formControlName="price" placeholder="Giá" />
+  </nz-form-control>
+</nz-form-item>
+      <button nz-button class="login-form-button login-form-margin" nzType="primary">Thêm mới</button>
+    
+     
+    </form>
